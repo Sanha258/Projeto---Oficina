@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS dbteste;
+
+CREATE DATABASE dbteste;
+
+USE dbteste;
+
+
+CREATE TABLE pessoa (
+idpessoa INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(255),
+cpf VARCHAR(11) NOT NULL UNIQUE,
+idade INT(4)
+);
